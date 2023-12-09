@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Bilangan</title>
+</head>
+
+<body>
+    <label for="jenisBilangan">Pilih Jenis Bilangan:</label>
+    <select id="jenisBilangan">
+        <option value="desimal">Desimal</option>
+        <option value="biner">Biner</option>
+        <option value="oktal">Oktal</option>
+        <option value="hexa">Hexa</option>
+    </select>
+
+    <label for="jenisKonversi">Pilih Jenis Konversi:</label>
+    <select id="jenisKonversi">
+        <option value="desimal">Desimal</option>
+        <option value="biner">Biner</option>
+        <option value="oktal">Oktal</option>
+        <option value="hexa">Hexa</option>
+    </select>
+
+    <br>
+    <label for="inputNilai">Masukkan Nilai:</label>
+    <br>
+    <input id="inputNilai" type="text" placeholder="Masukkan nilai" title="Masukkan hanya angka 0 atau 1">
+    <button onclick="konversiDenganLangkah()">Konversi</button>
+
+    <!-- hasil bilangan -->
+    <div id="hasilContainer" style="display: none;">
+        <p id="langkahLangkah"></p>
+        <p id="hasil"></p>
+    </div>
+
+    <!-- =================================================== -->
+
+
+    <script src="./sistemBilangan.js"></script>
+</body>
+
+</html>
